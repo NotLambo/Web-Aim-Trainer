@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aim Trainer | GitHub.com/NotLambo
+        </title>
+        <meta name="description" content="A Aim Trainer made by Lambo | Github.com/NotLambo">
+        <meta name="viewport" content="width=device-width, initial-scale">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        .hidden {
+            display: none;
+        }
+        .target-hide {
+            opacity: 0%;
+        }
+        :root {
+            background-color: #393053;
+        }
+        .hThree {
+            animation: rotation 2s infinite linear;
+            margin-top: 50px;
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+            text-align: center;
+        }
+        @keyframes rotation {
+                0% {
+                    transform: rotate(5deg);
+                }
+                25% {
+                    transform: rotate(0)
+                }
+                50% {
+                    transform: rotate(-5deg);
+                }
+                75% {
+                    transform: rotate(0)
+                }
+                100% {
+                    transform: rotate(5deg);
+                }
+            }
+        #menu-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        header, #img, #credit-modal, .settings-window {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            font-family: 'Press Start 2P', cursive;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: #18122B;
+            width: 20vh;
+            height: 5vh;
+        }
+        button:hover, h3:hover {
+            cursor: pointer;
+            transform: translateY(2px);
+        }
+        .window, .window-settings {
+            margin-top: 5px;
+            border-radius: 10px;
+            width: 600px;
+            height: fit-content;
+            background-color: #18122B;
+        }
+        .text {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .btnn-x, .btn-x {
+            background-color: #393053;
+            width: fit-content;
+            height: 20px;
+        }
+        .btn-settings {
+            margin: 5px;
+            width: fit-content;
+            background-color: #393053;
+            height: 20px;
+        }
+        .target-range {
+            height: fit-content;
+            height: fit-content;
+        }
+        .range {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 300px;
+        }
+        .target {
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+    <script src="index.js" async defer></script>
+    <body>
+        <div>
+            <header>
+                <img class="logo" src="Assets/Aim Trainer.png" width="400px" height="400px">
+            </header>
+            <section>
+                <div id="menu-buttons">
+                    <button class="start">Start.</button>
+                    <button class="settings">Settings.</button>
+                    <button class="credit">Credit.</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="credit-modal" class="credit-modal hidden">
+            <div class="window hidden">
+                <div class="btn hidden" style="display: inline;">
+                    <button class="btn-x" style="margin: 2px;">X</button>
+                </div>
+                <div id="img" class="img hidden">
+                    <img src="https://pbs.twimg.com/profile_images/1664780401963941889/yc9VdVZe_400x400.jpg" width="50px" style="border-radius: 50%; padding-top: 5px;">
+                </div>
+                <h1 style="text-align: center; letter-spacing: 2px; color: white;">Credit.</h1>
+                <hr width="300px">
+                <div class="text hidden">
+                    <h5 style="display: inline-block; padding-left: 5px; letter-spacing: 2px; color: white;">GitHub.com/NotLambo</h5>
+                    <h5 style="display: inline-block; padding-left: 5px; letter-spacing: 2px; color: white;">Instagram.com/316.jesus_g</h5>
+                    <h5 style="display: inline-block; padding-right: 5px; letter-spacing: 2px; color: white;">Twitter.com/not_lambo</h5>
+                    <h5 style="display: inline-block; padding-right: 5px; letter-spacing: 2px; color: white;">Discord: notlambo</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-window hidden">
+            <div class="window-settings hidden">
+                <div class="button-settings hidden" style="display: inline;">
+                    <button class="btnn-x" style="margin: 2px;">X</button>
+                </div>
+                <h1 style="text-align: center; letter-spacing: 2px; color: white;">Settings.</h1>
+                <hr width="300px">
+                <div class="text settings-text hidden">
+                    <button class="btn-settings light-dark">Light Mode.</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-range hidden">
+            <div class="range hidden">
+                <button class="target-one target target-hide"><img src="Assets/target.png" width="100px" class="target-one"></button>
+                <button class="target-two target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-three target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-four target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-five target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-six target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-seven target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-eight target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-nine target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-ten target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-eleven target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-twelve target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-thirteen target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-fourteen target target-hide"><img src="Assets/target.png" width="100px"></button>
+                <button class="target-fifthteen target target-hide"><img src="Assets/target.png" width="100px"></button>
+            </div>
+        </div>
+
+        <h3 class="hThree">Press 'ESC' Too End Game!</h3>
+
+    </body>
+</html>
+
+<!--
+
+
+  ______ _____ _______ _     _ _     _ ______    _______  _____  _______    / __   _  _____  _______        _______ _______ ______   _____ 
+ |  ____   |      |    |_____| |     | |_____]   |       |     | |  |  |   /  | \  | |     |    |    |      |_____| |  |  | |_____] |     |
+ |_____| __|__    |    |     | |_____| |_____] . |_____  |_____| |  |  |  /   |  \_| |_____|    |    |_____ |     | |  |  | |_____] |_____|
+                                                                         /                                                                 
+
+
+-->
